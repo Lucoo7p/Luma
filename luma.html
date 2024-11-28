@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luma Systems - Cabos de Rede</title>
+    <style>
+        /* Estilo Global */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Efeito de Neve */
+        .snow {
+            position: fixed;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 9999;
+        }
+        .snowflake {
+            color: #fff;
+            font-size: 1em;
+            position: absolute;
+            animation: snowfall 10s linear infinite;
+        }
+        @keyframes snowfall {
+            0% { top: -10px; opacity: 0; }
+            100% { top: 100vh; opacity: 1; }
+        }
+
+        /* Estilo Tela Inicial (Parallax) */
+        .parallax {
+            background-image: url('https://via.placeholder.com/1500x800/000000/FFFFFF?text=Cabos+de+Rede');
+            height: 100vh;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            font-size: 3em;
+            font-weight: bold;
+        }
+
+        /* Seção de Produtos */
+        .products {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px;
+            background-color: #333;
+            text-align: center;
+        }
+        .product {
+            width: 250px;
+            padding: 20px;
+            background-color: #444;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .product img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .product h3 {
+            margin-top: 10px;
+        }
+        .product p {
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        .product .price {
+            font-size: 18px;
+            color: #f39c12;
+            margin-top: 15px;
+        }
+        
+        /* Seção de Contato */
+        .contact {
+            background-color: #222;
+            padding: 50px;
+            text-align: center;
+        }
+        .contact h2 {
+            font-size: 2.5em;
+        }
+        .contact form {
+            margin-top: 30px;
+        }
+        .contact input, .contact textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 4px;
+            background-color: #555;
+            color: white;
+            font-size: 1em;
+        }
+        .contact button {
+            padding: 10px 20px;
+            background-color: #f39c12;
+            border: none;
+            border-radius: 4px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .contact button:hover {
+            background-color: #e67e22;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Efeito Neve -->
+    <div class="snow">
+        <div class="snowflake" style="left: 10%; animation-duration: 12s; animation-delay: 2s;">❄</div>
+        <div class="snowflake" style="left: 30%; animation-duration: 15s; animation-delay: 4s;">❄</div>
+        <div class="snowflake" style="left: 50%; animation-duration: 10s; animation-delay: 0s;">❄</div>
+        <div class="snowflake" style="left: 70%; animation-duration: 14s; animation-delay: 3s;">❄</div>
+        <div class="snowflake" style="left: 90%; animation-duration: 16s; animation-delay: 6s;">❄</div>
+    </div>
+
+    <!-- Tela Inicial com Parallax -->
+    <section class="parallax">
+        <div>Luma Systems - Conectando Você ao Futuro</div>
+    </section>
+
+    <!-- Seção de Produtos -->
+    <section class="products">
+        <div class="product">
+            <img src="https://via.placeholder.com/250x150/555555/FFFFFF?text=Cabo+Ethernet" alt="Cabo de Rede">
+            <h3>Cabo Ethernet 5e</h3>
+            <p>20 metros - Ideal para escritórios</p>
+            <div class="price">R$ 49,90</div>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/250x150/555555/FFFFFF?text=Cabo+Ethernet" alt="Cabo de Rede">
+            <h3>Cabo Ethernet 6</h3>
+            <p>30 metros - Alta performance</p>
+            <div class="price">R$ 89,90</div>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/250x150/555555/FFFFFF?text=Cabo+Fibra+Óptica" alt="Cabo de Rede">
+            <h3>Cabo Fibra Óptica</h3>
+            <p>50 metros - Para conexões rápidas</p>
+            <div class="price">R$ 199,90</div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section class="contact">
+        <h2>Entre em Contato</h2>
+        <form action="mailto:contato@lumasystems.com.br" method="post" enctype="text/plain">
+            <input type="text" name="nome" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu E-mail" required>
+            <textarea name="mensagem" placeholder="Sua Mensagem" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+</body>
+</html>
